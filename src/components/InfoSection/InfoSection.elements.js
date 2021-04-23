@@ -9,8 +9,7 @@ export const InfoSec = styled.div`
 
 
 export const InfoColumn = styled.div`
-  margin-bottom: 15px;
-  padding-right: 15px;
+  padding-top: 60px;
   padding-left: 15px;
   text-align: center;
 align-items: center;
@@ -41,7 +40,7 @@ export const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 90px;
   line-height: 1.3;
-  font-weight: 600;
+  font-weight: bolder;
   text-align: center;
 
   color: white;
@@ -51,7 +50,7 @@ export const Subtitle = styled.p`
   text-align: center;
   margin-bottom: 2.5rem;
   margin-top: 2.5rem;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 48px;
 line-height: 1.3;
 

@@ -38,14 +38,20 @@ function Navbar() {
 
   window.addEventListener('resize', showButton);
 
+  const imgStyle = {
+    height: 45,
+}
+const logoTitle ={
+  padding: 10,
+}
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav>
           <NavbarContainer>
             <NavLogo to='/' onClick={closeMobileMenu}>
-            <a href="/"><img src={logo} height="45" alt="logo"/></a>
-            IAMM
+  <a href="/"><img src={logo} style={imgStyle} alt="logo"/></a>
+            <strong style={logoTitle}>IAMM </strong> 
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}

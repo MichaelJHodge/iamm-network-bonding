@@ -18,7 +18,6 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled(Container)`
   display: flex;
-  
   justify-content: space-between;
   height: 80px;
   ${Container}
@@ -27,16 +26,14 @@ export const NavbarContainer = styled(Container)`
 export const NavLogo = styled(Link)`
   color: white;
   justify-self: flex-start;
+
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
   display: flex;
   align-items: center;
 
-
-
 `;
-
 
 
 

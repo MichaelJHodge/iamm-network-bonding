@@ -11,12 +11,13 @@ import {
 
 function InfoSection({
   primary,
-  
   headline,
-  description,
   buttonLabel,
  
 }) {
+  const creatorStyle = {
+ color: "#40F48B",
+  }
   return (
     <>
       <InfoSec>
@@ -24,7 +25,7 @@ function InfoSection({
             <InfoColumn>
               <TextWrapper>
                 <Heading>{headline}</Heading>
-                <Subtitle>{description}</Subtitle>
+                <Subtitle>Liberating the <text style={creatorStyle}> creator </text> economy </Subtitle>
                 <Link to='/curve'>
                   <Button big fontBig primary={primary}>
                     {buttonLabel}
