@@ -9,29 +9,34 @@ export const InfoSec = styled.div`
 
 
 export const InfoColumn = styled.div`
-  padding-top: 60px;
-  padding-left: 15px;
   text-align: center;
 align-items: center;
 
   @media screen and (max-width: 768px) {
     max-width: 100%;
-    flex-basis: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    align-self: center;
+
+
+  
   }
 `;
 
 export const TextWrapper = styled.div`
   max-width: 740px;
   text-align: center;
-  padding-top: 0;
   padding-bottom: 60px;
   @media screen and (max-width: 768px) {
-    padding-bottom: 65px;
+    padding-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-basis: 100%;
+
   }
 `;
-
 
 
 
@@ -40,19 +45,22 @@ export const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 90px;
   line-height: 1.3;
-  font-weight: bolder;
+  font-weight: bold;
   text-align: center;
 
+
   color: white;
+  
 `;
 
 export const Subtitle = styled.p`
   text-align: center;
   margin-bottom: 2.5rem;
   margin-top: 2.5rem;
-  font-weight: bold;
-  font-size: 48px;
+  font-weight: bolder;
+  font-size: 55px;
 line-height: 1.3;
+font-family: "Poppins";
 
   color: white;
 `;

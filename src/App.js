@@ -1,5 +1,6 @@
 import React from 'react';
 import GlobalStyle from './Styles';
+import GlobalFonts from './fonts/fonts';
 import Home from './pages/Home/Home';
 import BondingCurve from './pages/Curve/BondingCurve';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -10,6 +11,7 @@ function App() {
   return (
     <Router>
       <GlobalStyle />
+      <GlobalFonts/>
       <ScrollToTop />
       <Navbar />
       <Switch>

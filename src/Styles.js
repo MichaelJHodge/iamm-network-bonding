@@ -16,10 +16,11 @@ export const Container = styled.div`
   margin-left: auto;
   display: flex;
   justify-content: center;
+  -bottom: 100px;
  
   @media screen and (max-width: 991px) {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 50%;
+    padding-left: 50%;
   }
 `;
 
