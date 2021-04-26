@@ -1,14 +1,8 @@
 import styled from "styled-components";
 import {DownArrowAlt} from '@styled-icons/boxicons-solid/DownArrowAlt';
- 
 
-export const BondingCurveContainer = styled.div`
-display: grid;
-grid-template-columns: repeat(2, 2fr);
-grid-gap: 50px;
-height: 750px;
-padding: 25px;
-`
+
+
 
 export const CurveOfferingHeader = styled.div`
   display: flex;
@@ -21,6 +15,11 @@ export const CurveOfferingHeader = styled.div`
   border-radius: 8px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: rgba(139, 64, 244, 1);
+  @media screen and (max-width: 768px) {
+    
+    width: 450px;
+
+  }
 `;
 
 export const HeaderAlert = styled.div`
@@ -44,7 +43,7 @@ export const HeaderAlert = styled.div`
 export const HeaderTitle = styled.div`
   color: rgba(255, 255, 255, 1);
   font-size: 40px;
-  letter-spacing: 3px;
+  letter-spacing: 0px;
   text-align: center;
   justify-content: center;
   align-content: center;  
@@ -53,15 +52,44 @@ export const HeaderTitle = styled.div`
   font-family: "Poppins";
   font-weight: bold;
 
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 22px;
+
+  }
+
 `;
+
+ 
+
+export const BondingCurveContainer = styled.div`
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 2rem;
+height: 750px;
+padding: 25px;
+
+@media screen and (max-width: 768px) {
+      display:grid; 
+  gap:1rem;
+  grid-template-columns:repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  align-content: center;
+      align-items: center;
+  }
+
+`
+
 
 
 export const ChartContainer = styled.div`
 display: grid;
+position: relative;
       justify-content: flex-start;
       align-items: flex-start;
-      height: 90%;
-      width: 1100px;
+      height: 73vh;
+  width: 70vw;
       box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
       padding-top: 10px;
       padding-bottom: 25px;
@@ -71,9 +99,12 @@ display: grid;
       border-width: 1px;
       border-style: solid;
 
+
+
 `
 export const AreaChartContainer = styled.div`
       padding-top: 60px;
+      position: relative;
      
 
 `
@@ -115,6 +146,10 @@ padding-right: 25px;
 padding-left: 25px;
 display: grid;
 grid-template-rows: repeat(1, 2fr);
+@media screen and (max-width: 768px) {
+      width: 85%;
+      display: grid;
+  }
 
 `
 
@@ -131,6 +166,12 @@ export const WalletContainer = styled.div`
     border-color: rgba(128, 128, 128, 1);
     border-width: 1px;
     border-style: solid;
+
+    @media screen and (max-width: 768px) {
+      height: 85%;
+
+  }
+
 `
 
 
@@ -225,7 +266,7 @@ export const PurchaseContainer = styled.div`
 
       flex-direction: column;
       flex-wrap: wrap;
-      height: 400px;
+      height: 425px;
       align-self: center;
       align-content: center;
       align-items: center;
@@ -236,6 +277,11 @@ export const PurchaseContainer = styled.div`
       border-color: rgba(128, 128, 128, 1);
       border-width: 1px;
       border-style: solid;
+
+      @media screen and (max-width: 768px) {
+            margin-top: 0px;
+
+  }
 `
 
 
@@ -263,7 +309,7 @@ export const Switch = styled.div`
 `
 
 
-export const BuySwitch = styled.div`
+export const BuySwitchActive = styled.div`
 max-width: 168px;
       color: rgba(26, 26, 26, 1);
       font-size: 18px;
@@ -284,7 +330,31 @@ max-width: 168px;
       border: 1px solid rgba(0, 0, 0, 0.25); 
 `
 
-export const SellSwitch = styled.div`
+export const BuySwitchInActive = styled.div`
+ max-width: 168px;
+      color: rgba(0, 0, 0, 1);
+      font-size: 18px;
+      text-align: center;
+      font-weight: bolder;
+      font-family: Montserrat, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 160px;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: white;
+      overflow: visible;
+      border: 1px solid grey;    
+      &:hover{
+          color: green;
+      }
+`
+
+
+
+export const SellSwitchInactive = styled.div`
  max-width: 168px;
       color: rgba(0, 0, 0, 1);
       font-size: 18px;
@@ -304,6 +374,29 @@ export const SellSwitch = styled.div`
       &:hover{
           color: red;
       }
+    
+`
+
+export const SellSwitchActive = styled.div`
+ max-width: 168px;
+      color: white;
+      font-size: 18px;
+      text-align: center;
+      font-weight: bolder;
+      font-family: Montserrat, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 160px;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: red;
+      overflow: visible;
+      border: 1px solid grey;    
+      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+
+      
     
 `
 

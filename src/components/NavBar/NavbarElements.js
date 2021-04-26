@@ -13,6 +13,13 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
+
+  @media screen and (max-width: 960px) {
+    display: flex;   
+    align-content: space-between;
+    width: 100%;
+  
+  }
   
 `;
 
@@ -22,6 +29,7 @@ export const NavbarContainer = styled(Container)`
   height: 80px;
 
   ${Container}
+
 `;
 
 export const NavLogo = styled(Link)`

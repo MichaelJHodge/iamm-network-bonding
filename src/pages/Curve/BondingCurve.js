@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component }from 'react';
 import {
   BondingCurveContainer,
   PurchaseColumn,
@@ -18,8 +18,8 @@ import {
   ImportWallet,
   Switch,
   Conversion,
-  BuySwitch,
-  SellSwitch,
+  BuySwitchActive,
+  SellSwitchInactive,
   AmountField,
   Input,
   Dropdown,
@@ -35,7 +35,7 @@ import {
   PurchaseButtonContainer,
   PurchaseButton,
   PurchaseMKTText,
-  AreaChartContainer
+  AreaChartContainer,
 
 } from "../Curve/BondingCurve.elements"
 
@@ -43,42 +43,64 @@ import AreaChart from '../Curve/components/graph'
 
 
 
+class BondingCurve extends Component {
+
+  state = {
+    selectedIndex: 0
+  };
+
+  handleSelect = index => {
+    this.setState({ selectedIndex: index });
+  };
+
+  handleButtonClick = () => {
+    this.setState({ selectedIndex: 0 });
+  };
 
 
-export default function BondingCurve() { 
-  return (
-    <>       
+  render(){
+    return (
+<>       
         <CurveOfferingHeader>
         <HeaderAlert>!</HeaderAlert>
         <HeaderTitle>Initial Bonding Curve Offering</HeaderTitle>
       </CurveOfferingHeader>
      <BondingCurveContainer>
         <ChartContainer>
+
          <ChartDetailsRow>
           <BuyPrice>Buy Price </BuyPrice>
           <Reserve> Reserve</Reserve>
           <Issuance>Curve Issuance</Issuance>
           <Supply>Total Supply</Supply>
          </ChartDetailsRow>
+
          <AreaChartContainer>
          <AreaChart/> 
-
          </AreaChartContainer>
 
  
         </ChartContainer>
         <PurchaseColumn>
+
             <WalletContainer>
             <ConnectWallet>Connect Wallet</ConnectWallet>
             <ImportWallet>Import Wallet</ImportWallet>
             <CreateWallet>Create Wallet</CreateWallet>
             </WalletContainer>
+
             <PurchaseContainer>
               <Conversion>1 MKT = 678 CKB</Conversion>
+
               <Switch>
-              <BuySwitch>BUY </BuySwitch>
-              <SellSwitch>SELL</SellSwitch>
+             
+             <BuySwitchActive>BUY</BuySwitchActive>
+             
+             
+              <SellSwitchInactive>SELL</SellSwitchInactive>
+             
               </Switch>
+
               <AmountField>
                 <Input type="text" value="123, 456"/>
                 <Dropdown>
@@ -110,7 +132,8 @@ export default function BondingCurve() {
 
      </BondingCurveContainer>
     </>
-
-  );
+    )
+  }
 }
 
+export default BondingCurve

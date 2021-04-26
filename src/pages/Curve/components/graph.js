@@ -15,21 +15,19 @@ const AreaChart = () => {
               data: [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4],
               borderColor: "#8B40F4",
 		  fill: true,
-		  lineTension: 0.7,
 		  radius: 4,
 		  borderWidth: 3,
 		  backgroundColor: "#a05cff",
-		  display: false,
-		  responsive: true,
             },
           
           ],
           
         }}
-        height={500}
-        width={1000}
+        height={550}
+        width={1100}
         options={{
           maintainAspectRatio: false,
+          responsive: true,
           scales: {
             yAxes: [
               {

@@ -43,6 +43,7 @@ function Navbar() {
 }
 const logoTitle ={
   padding: 10,
+  fontFamily: "Poppins"
 }
   return (
     <>
