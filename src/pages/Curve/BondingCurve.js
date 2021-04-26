@@ -15,7 +15,27 @@ import {
   Supply,
   ConnectWallet,
   CreateWallet,
-  ImportWallet
+  ImportWallet,
+  Switch,
+  Conversion,
+  BuySwitch,
+  SellSwitch,
+  AmountField,
+  Input,
+  Dropdown,
+  CKBText,
+  Percentages, 
+  Percent25,
+  Percent50,
+  Percent75,
+  Percent100,
+  TotalAmountContainer,
+  TotalAmountField,
+  Amount,
+  PurchaseButtonContainer,
+  PurchaseButton,
+  PurchaseMKTText,
+
 } from "../Curve/BondingCurve.elements"
 
 
@@ -46,7 +66,37 @@ export default function BondingCurve() {
             <CreateWallet>Create Wallet</CreateWallet>
             </WalletContainer>
             <PurchaseContainer>
-              
+              <Conversion>1 MKT = 678 CKB</Conversion>
+              <Switch>
+              <BuySwitch>BUY </BuySwitch>
+              <SellSwitch>SELL</SellSwitch>
+              </Switch>
+              <AmountField>
+                <Input type="text" value="123, 456"/>
+                <Dropdown>
+                  <CKBText>$CKB</CKBText>
+                </Dropdown>
+              </AmountField>
+
+              <Percentages>
+              <Percent25>25%</Percent25>
+              <Percent50>50%</Percent50>
+              <Percent75>75%</Percent75>
+              <Percent100>100%</Percent100>
+
+              </Percentages>
+
+              <TotalAmountContainer>
+                <TotalAmountField>
+                  <Amount>83,703,168 $CKB</Amount>
+                </TotalAmountField>
+              </TotalAmountContainer>
+
+              <PurchaseButtonContainer>
+                <PurchaseButton>
+                  <PurchaseMKTText>BUY MKT</PurchaseMKTText>
+                </PurchaseButton>
+              </PurchaseButtonContainer>
             </PurchaseContainer>
         </PurchaseColumn>
 
