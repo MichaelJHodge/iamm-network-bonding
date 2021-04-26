@@ -35,10 +35,14 @@ import {
   PurchaseButtonContainer,
   PurchaseButton,
   PurchaseMKTText,
+  AreaChartContainer
 
 } from "../Curve/BondingCurve.elements"
 
 import AreaChart from '../Curve/components/graph'
+
+
+
 
 
 export default function BondingCurve() { 
@@ -56,7 +60,10 @@ export default function BondingCurve() {
           <Issuance>Curve Issuance</Issuance>
           <Supply>Total Supply</Supply>
          </ChartDetailsRow>
-          <AreaChart/> 
+         <AreaChartContainer>
+         <AreaChart/> 
+
+         </AreaChartContainer>
 
  
         </ChartContainer>

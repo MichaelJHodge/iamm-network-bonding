@@ -72,6 +72,11 @@ display: grid;
       border-style: solid;
 
 `
+export const AreaChartContainer = styled.div`
+      padding-top: 60px;
+     
+
+`
 
 export const ChartDetailsRow = styled.div`
 display: flex;
