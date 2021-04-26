@@ -26,7 +26,7 @@ const AreaChart = () => {
           ],
           
         }}
-        height={600}
+        height={500}
         width={1000}
         options={{
           maintainAspectRatio: false,

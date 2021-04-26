@@ -60,7 +60,7 @@ export const ChartContainer = styled.div`
 display: grid;
       justify-content: flex-start;
       align-items: flex-start;
-      height: 100%;
+      height: 90%;
       width: 1100px;
       box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
       padding-top: 10px;
@@ -108,8 +108,8 @@ export const Supply = styled.div`
     padding-right: 40px;
 
 `
-export const PurchaseColumn = styled.div`
-height: 100%;
+export const PurchaseColumn = styled.div` 
+height: 75%;
 width: 100%;
 padding-right: 25px;
 padding-left: 25px;
@@ -122,14 +122,12 @@ export const WalletContainer = styled.div`
   display: flex;
     flex-direction: column;
     width: 100%;
-    height: 275px;
+    height: 95%;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
     border-color: rgba(128, 128, 128, 1);
     border-width: 1px;
     border-style: solid;
@@ -224,6 +222,7 @@ export const CreateWallet = styled.div`
 
 export const PurchaseContainer = styled.div`
  display: flex;
+
       flex-direction: column;
       flex-wrap: wrap;
       height: 400px;
@@ -231,10 +230,9 @@ export const PurchaseContainer = styled.div`
       align-content: center;
       align-items: center;
       box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+      margin-top: 10px;
       padding-top: 10px;
       padding-bottom: 10px;
-      padding-right: 10px;
-      padding-left: 10px;
       border-color: rgba(128, 128, 128, 1);
       border-width: 1px;
       border-style: solid;
@@ -474,6 +472,8 @@ export const TotalAmountContainer = styled.div`
       max-width: 336px;
       width: 90%;
       margin-bottom: 20px;
+      border-radius: 8px;
+
       box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
 `
 
