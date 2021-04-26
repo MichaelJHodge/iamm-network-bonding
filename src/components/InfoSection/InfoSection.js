@@ -18,6 +18,7 @@ function InfoSection({
   const creatorStyle = {
  color: "#40F48B",
   }
+  
   return (
     <>
       <InfoSec>
