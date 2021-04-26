@@ -54,44 +54,81 @@ export const HeaderTitle = styled.div`
 `;
 
 
-
 export const ChartContainer = styled.div`
-background-color: black;
-display: flex;
-height: 100%;
-padding-top: 25px;
-padding-left: 25px;
-width: 1000px;
+display: grid;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 100%;
+      width: 1100px;
+      box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 10px;
+      padding-left: 10px;
+      border-color: rgba(128, 128, 128, 1);
+      border-width: 1px;
+      border-style: solid;
 
 `
 
+export const ChartDetailsRow = styled.div`
+display: flex;
+padding-left: 40px;
+
+
+`
+export const BuyPrice = styled.div`
+    color: #777;
+    font-size: 20px;
+    padding-right: 40px;
+
+`
+export const Issuance = styled.div`
+    color: #777;
+    font-size: 20px;
+    padding-right: 40px;
+
+`
+export const Reserve = styled.div`
+    color: #777;
+    font-size: 20px;
+    padding-right: 40px;
+
+`
+export const Supply = styled.div`
+    color: #777;
+    font-size: 20px;
+    padding-right: 40px;
+
+`
 export const PurchaseColumn = styled.div`
-background-color: blue;
 height: 100%;
-padding-top: 25px;
+width: 100%;
 padding-right: 25px;
 padding-left: 25px;
-
 display: grid;
-grid-template-rows: repeat(2, 2fr);
+grid-template-rows: repeat(1, 2fr);
 
 `
 
 export const WalletContainer = styled.div`
 width: 100%;
-background-color: red;
+height: 250px;
+box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
 
-height: 300px;
-
+border-color: rgba(128, 128, 128, 1);
+  border-width: 1px;
+  border-style: solid;
 
 `
 
-
-
 export const PurchaseContainer = styled.div`
-height: 300px;
-background-color: black;
+height: 400px;
 width: 100%;
+box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
 
+border-color: rgba(128, 128, 128, 1);
+  border-width: 1px;
+  border-style: solid;
 
 `

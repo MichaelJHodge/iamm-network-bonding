@@ -7,7 +7,12 @@ import {
   WalletContainer,
   CurveOfferingHeader,
   HeaderTitle,
-  HeaderAlert
+  HeaderAlert,
+  ChartDetailsRow,
+  BuyPrice,
+  Reserve,
+  Issuance,
+  Supply
 } from "../Curve/BondingCurve.elements"
 
 
@@ -21,7 +26,16 @@ export default function BondingCurve() {
         <HeaderTitle>Initial Bonding Curve Offering</HeaderTitle>
       </CurveOfferingHeader>
      <BondingCurveContainer>
-        <ChartContainer/>
+        <ChartContainer>
+         <ChartDetailsRow>
+          <BuyPrice>Buy Price </BuyPrice>
+          <Reserve> Reserve</Reserve>
+          <Issuance>Curve Issuance</Issuance>
+          <Supply>Total Supply</Supply>
+         </ChartDetailsRow>
+        
+
+        </ChartContainer>
         <PurchaseColumn>
             <WalletContainer>
 
