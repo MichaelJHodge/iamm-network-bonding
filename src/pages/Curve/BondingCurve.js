@@ -38,10 +38,10 @@ import {
 
 } from "../Curve/BondingCurve.elements"
 
+import AreaChart from '../Curve/components/graph'
 
 
-
-export default function BondingCurve() {
+export default function BondingCurve() { 
   return (
     <>       
         <CurveOfferingHeader>
@@ -56,8 +56,9 @@ export default function BondingCurve() {
           <Issuance>Curve Issuance</Issuance>
           <Supply>Total Supply</Supply>
          </ChartDetailsRow>
-        
+          <AreaChart/> 
 
+ 
         </ChartContainer>
         <PurchaseColumn>
             <WalletContainer>
@@ -102,6 +103,7 @@ export default function BondingCurve() {
 
      </BondingCurveContainer>
     </>
+
   );
 }
 
