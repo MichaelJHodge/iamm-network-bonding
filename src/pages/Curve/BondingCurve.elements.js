@@ -42,13 +42,13 @@ export const HeaderAlert = styled.div`
 export const HeaderTitle = styled.div`
   color: rgba(255, 255, 255, 1);
   font-size: 40px;
-  letter-spacing: 0%;
+  letter-spacing: 3px;
   text-align: center;
   justify-content: center;
   align-content: center;  
   align-self: center;
   padding-left: 20px;
-  font-family: Montserrat, sans-serif;
+  font-family: "Poppins";
   font-weight: bold;
 
 `;
@@ -112,15 +112,108 @@ grid-template-rows: repeat(1, 2fr);
 `
 
 export const WalletContainer = styled.div`
-width: 100%;
-height: 250px;
-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 275px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-color: rgba(128, 128, 128, 1);
+    border-width: 1px;
+    border-style: solid;
+`
 
-border-color: rgba(128, 128, 128, 1);
-  border-width: 1px;
-  border-style: solid;
+
+export const ConnectWallet = styled.div`
+ width: 175px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 8px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
+    background-color: rgba(139, 64, 244, 1);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    
+    &:hover{
+    color: rgba(139, 64, 244, 1);
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+    }
 
 `
+
+
+export const ImportWallet = styled.div`
+ max-width: 200px;
+    color: rgba(139, 64, 244, 1);
+    font-size: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-color: rgba(139, 64, 244, 1);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    border-width: 2px;
+    border-style: solid;
+
+    &:hover{
+    color: white;
+    background-color: rgba(139, 64, 244, 1);
+    cursor: pointer;
+    }
+`
+
+export const CreateWallet = styled.div`
+  max-width: 200px;
+      color: rgba(139, 64, 244, 1);
+      font-size: 18px;
+      letter-spacing: 0%;
+      text-align: center;
+      font-family: "Poppins";
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 10px;
+      border-radius: 8px;
+      padding-top: 12px;
+      padding-bottom: 15px;
+      padding-right: 12px;
+      padding-left: 12px;
+      border-color: rgba(139, 64, 244, 1);
+      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+      border-width: 2px;
+      border-style: solid;
+
+      &:hover{
+        color: white;
+    background-color: rgba(139, 64, 244, 1);
+    cursor: pointer;
+      }
+`
+
 
 export const PurchaseContainer = styled.div`
 height: 400px;

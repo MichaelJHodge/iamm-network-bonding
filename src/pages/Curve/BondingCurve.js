@@ -12,7 +12,10 @@ import {
   BuyPrice,
   Reserve,
   Issuance,
-  Supply
+  Supply,
+  ConnectWallet,
+  CreateWallet,
+  ImportWallet
 } from "../Curve/BondingCurve.elements"
 
 
@@ -38,7 +41,9 @@ export default function BondingCurve() {
         </ChartContainer>
         <PurchaseColumn>
             <WalletContainer>
-
+            <ConnectWallet>Connect Wallet</ConnectWallet>
+            <ImportWallet>Import Wallet</ImportWallet>
+            <CreateWallet>Create Wallet</CreateWallet>
             </WalletContainer>
             <PurchaseContainer>
               
