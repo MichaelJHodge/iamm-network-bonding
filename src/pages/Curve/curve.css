@@ -37,6 +37,8 @@ button[type="buyButton"].active{
     background-color: white;
     overflow: visible;
     border: 1px solid grey; 
+    transition: ease-in 0.3s;
+
   }
 
 
@@ -71,6 +73,8 @@ button[type="buyButton"].active{
     background-color: white;
     overflow: visible;
     border: 1px solid grey; 
+    transition: ease-in 0.3s;
+
 
   }
 
@@ -93,8 +97,97 @@ button[type="buyButton"].active{
 
     border: 1px solid grey;    
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: ease-in 0.3s;
+
 
   }
+
+
+
+  button[type="purchaseMKTButton"].active{
+    display: flex;
+      flex-direction: column;
+      max-width: 336px;
+      height: 55px;
+      border-radius: 8px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-right: 12px;
+      padding-left: 12px;
+      background-color: rgba(64, 244, 139, 1);
+      align-items: center;
+      cursor: pointer;      
+      border: 1px solid rgba(64, 244, 139, 1);  
+      transition: ease-in 0.3s;
+
+    
+
+  }
+
+  button[type="purchaseMKTButton"].inactive{
+    display: flex;
+      flex-direction: column;
+      max-width: 336px;
+      height: 55px;
+      border-radius: 8px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-right: 12px;
+      padding-left: 12px;
+      background-color: red;
+      align-items: center;
+      cursor: pointer;      
+      border: 1px solid grey;    
+      transition: ease-in 0.3s;
+
+
+
+  }
+
+div[type="buyPercent25"].active{
+  max-width: 84px;
+  color: rgba(26, 26, 26, 1);
+  font-size: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 8px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 22px;
+  padding-left: 22px;
+  background-color: rgba(64, 244, 139, 1);
+  cursor: pointer;
+  transition: ease-in 0.3s;
+
+}
+
+div[type="buyPercent25"].inactive{
+  max-width: 84px;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 8px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 22px;
+  padding-left: 22px;
+  background-color: red;
+  cursor: pointer;
+  transition: ease-in 0.3s;
+
+}
+
+
+
 
 
 

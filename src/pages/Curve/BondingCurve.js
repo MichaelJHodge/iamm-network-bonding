@@ -19,8 +19,8 @@ import {
   ImportWallet,
   Switch,
   Conversion,
-  BuySwitchActive,
-  SellSwitchInactive,
+  // BuySwitchActive,
+  // SellSwitchInactive,
   AmountField,
   Input,
   Dropdown,
@@ -34,9 +34,10 @@ import {
   TotalAmountField,
   Amount,
   PurchaseButtonContainer,
-  PurchaseButton,
+  // PurchaseButton,
   PurchaseMKTText,
   AreaChartContainer,
+  SellMKTText
 
 } from "../Curve/BondingCurve.elements"
 
@@ -52,13 +53,16 @@ class BondingCurve extends Component {
       switchID: 1
     }
     this.setSwitchID = this.SwitchID.bind(this);
+
   }
+
   SwitchID(id){
     this.setState({switchID: id});
   }
 
   render(){
 
+    
 
     return (
 <>       
@@ -120,7 +124,7 @@ class BondingCurve extends Component {
               </AmountField>
 
               <Percentages>
-              <Percent25>25%</Percent25>
+              <Percent25 className={this.state.switchID === 1 ? "button1 active" : "button1 inactive"} type='buyPercent25'>25%</Percent25>
               <Percent50>50%</Percent50>
               <Percent75>75%</Percent75>
               <Percent100>100%</Percent100>
@@ -134,9 +138,20 @@ class BondingCurve extends Component {
               </TotalAmountContainer>
 
               <PurchaseButtonContainer>
-                <PurchaseButton>
+
+              <button className={this.state.switchID === 1 ? "button1 active" : "button1 inactive"} type='purchaseMKTButton'>
+              <PurchaseMKTText className={this.state.switchID === 1 ? "button1 active" : "button1 inactive"} >BUY MKT</PurchaseMKTText>
+
+              
+
+
+              </button>
+
+                {/* <PurchaseButton>
                   <PurchaseMKTText>BUY MKT</PurchaseMKTText>
-                </PurchaseButton>
+                </PurchaseButton> */}
+
+                
               </PurchaseButtonContainer>
             </PurchaseContainer>
         </PurchaseColumn>
