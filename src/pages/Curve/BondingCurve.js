@@ -75,7 +75,7 @@ class BondingCurve extends Component {
 <CurveOfferingHeader>
         <HeaderAlert>!</HeaderAlert>
         <HeaderTitle>Initial Bonding Curve Offering</HeaderTitle>
-      </CurveOfferingHeader>
+      </CurveOfferingHeader> 
 
 </FadeInAnimation>
 
