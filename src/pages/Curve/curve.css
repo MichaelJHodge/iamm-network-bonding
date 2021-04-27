@@ -150,6 +150,8 @@ button[type="buyButton"].active{
     text-align: center;
     font-family: Montserrat, sans-serif;
     font-weight: bold;
+    transition: ease-in 0.3s;
+
 
   }
 
@@ -162,6 +164,8 @@ button[type="buyButton"].active{
     text-align: center;
     font-family: Montserrat, sans-serif;
     font-weight: bold;
+    transition: ease-in 0.3s;
+
 
   }
 
