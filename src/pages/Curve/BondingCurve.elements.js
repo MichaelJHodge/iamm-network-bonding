@@ -648,6 +648,7 @@ export const SellButton = styled.div`
       border: 1px solid red;   
 `
 
+
 export const SellMKTText = styled.div`
 color: white;
       font-size: 20px;

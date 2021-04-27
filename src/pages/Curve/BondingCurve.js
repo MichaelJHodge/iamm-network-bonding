@@ -1,4 +1,5 @@
 import React, {Component }from 'react';
+import "../Curve/curve.css"
 import {
   BondingCurveContainer,
   PurchaseColumn,
@@ -45,20 +46,20 @@ import AreaChart from '../Curve/components/graph'
 
 class BondingCurve extends Component {
 
-  state = {
-    selectedIndex: 0
-  };
-
-  handleSelect = index => {
-    this.setState({ selectedIndex: index });
-  };
-
-  handleButtonClick = () => {
-    this.setState({ selectedIndex: 0 });
-  };
-
+  constructor(){
+    super();
+    this.state = {
+      switchID: 1
+    }
+    this.setSwitchID = this.SwitchID.bind(this);
+  }
+  SwitchID(id){
+    this.setState({switchID: id});
+  }
 
   render(){
+
+
     return (
 <>       
         <CurveOfferingHeader>
@@ -92,13 +93,23 @@ class BondingCurve extends Component {
             <PurchaseContainer>
               <Conversion>1 MKT = 678 CKB</Conversion>
 
-              <Switch>
-             
+              <Switch>    
+
+      
+            <button className={this.state.switchID === 1 ? "button1 active" : "button1 inactive"} onClick={() => this.SwitchID(1)} 
+            type="buyButton" ref="button1">
+              BUY
+            </button>
+            
+            <button className={this.state.switchID === 2 ? "button2 active" : "button2 inactive"} onClick={() => this.SwitchID(2)} 
+              ref="button2" type="sellButton">
+                SELL
+              </button>
+        
+              {/* 
              <BuySwitchActive>BUY</BuySwitchActive>
-             
-             
-              <SellSwitchInactive>SELL</SellSwitchInactive>
-             
+              <SellSwitchInactive>SELL</SellSwitchInactive>      */}
+                    
               </Switch>
 
               <AmountField>

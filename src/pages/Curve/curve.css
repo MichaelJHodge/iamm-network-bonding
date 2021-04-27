@@ -1,0 +1,101 @@
+button[type="buyButton"].active{
+    max-width: 168px;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Montserrat, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-right: 10px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+
+    width: 160px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #40F48B;
+    overflow: visible;
+    border: 1px solid grey; 
+
+  }
+
+  button[type="buyButton"].inactive{
+    max-width: 168px;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Montserrat, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-right: 10px;
+    width: 160px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: white;
+    overflow: visible;
+    border: 1px solid grey; 
+  }
+
+
+  button[type="buyButton"].inactive:hover{
+    color: #40F48B;
+
+  }
+
+
+
+
+
+  button[type="sellButton"].inactive:hover{
+    color: red;
+
+  }
+
+
+  button[type="sellButton"].inactive{
+    max-width: 168px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Montserrat, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 160px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: white;
+    overflow: visible;
+    border: 1px solid grey; 
+
+  }
+
+  button[type="sellButton"].active{
+    max-width: 168px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 160px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: red;
+    overflow: visible;
+
+    border: 1px solid grey;    
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+
+  }
+
+
+
+ 
