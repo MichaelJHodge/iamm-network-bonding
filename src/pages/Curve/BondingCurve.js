@@ -51,14 +51,19 @@ class BondingCurve extends Component {
 
   constructor(){
     super();
+    
     this.state = {
       switchID: 1
     }
+
     this.setSwitchID = this.SwitchID.bind(this);
   }
 
   SwitchID(id){
+
+
     this.setState({switchID: id});
+
   }
 
   render(){
