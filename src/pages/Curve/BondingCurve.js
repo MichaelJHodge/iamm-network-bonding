@@ -71,18 +71,15 @@ class BondingCurve extends Component {
   
     return (
 <>       
-<FadeInAnimation direction="down">
 <CurveOfferingHeader>
         <HeaderAlert>!</HeaderAlert>
         <HeaderTitle>Initial Bonding Curve Offering</HeaderTitle>
       </CurveOfferingHeader> 
 
-</FadeInAnimation>
 
 
        <BondingCurveContainer>
 
-       <FadeInAnimation direction="left">
 
         <ChartContainer>
 
@@ -99,9 +96,7 @@ class BondingCurve extends Component {
 
  
         </ChartContainer>
-        </FadeInAnimation>
 
-        <FadeInAnimation direction="right">
 
         <PurchaseColumn>
 
@@ -177,7 +172,6 @@ class BondingCurve extends Component {
               </PurchaseButtonContainer>
             </PurchaseContainer>
         </PurchaseColumn>
-        </FadeInAnimation>
 
 
      </BondingCurveContainer>
