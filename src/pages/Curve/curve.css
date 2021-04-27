@@ -48,9 +48,6 @@ button[type="buyButton"].active{
   }
 
 
-
-
-
   button[type="sellButton"].inactive:hover{
     color: red;
 
@@ -120,7 +117,8 @@ button[type="buyButton"].active{
       border: 1px solid rgba(64, 244, 139, 1);  
       transition: ease-in 0.3s;
 
-    
+
+
 
   }
 
@@ -140,9 +138,34 @@ button[type="buyButton"].active{
       border: 1px solid grey;    
       transition: ease-in 0.3s;
 
+  }
 
+
+  text[type="purchaseMKT"].active{
+    color: rgba(26, 26, 26, 1);
+    font-size: 20px;
+    letter-spacing: 0%;
+    width: 100px;
+    margin-top: 5px;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
 
   }
+
+  text[type="purchaseMKT"].inactive{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0%;
+    width: 100px;
+    margin-top: 5px;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+
+  }
+
+
 
 div[type="buyPercent25"].active{
   max-width: 84px;

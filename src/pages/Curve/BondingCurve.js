@@ -140,7 +140,12 @@ class BondingCurve extends Component {
               <PurchaseButtonContainer>
 
               <button className={this.state.switchID === 1 ? "button1 active" : "button1 inactive"} type='purchaseMKTButton'>
-              <PurchaseMKTText className={this.state.switchID === 1 ? "button1 active" : "button1 inactive"} >BUY MKT</PurchaseMKTText>
+
+              <text className={this.state.switchID === 1 ? " active" : " inactive"} type="purchaseMKT">
+
+              {this.state.switchID === 1 ? 'BUY MKT' : "SELL MKT"}
+
+              </text>
 
               
 
