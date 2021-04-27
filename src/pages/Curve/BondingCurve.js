@@ -87,7 +87,7 @@ class BondingCurve extends Component {
         <ChartContainer>
 
          <ChartDetailsRow>
-          <BuyPrice>Buy Price </BuyPrice>
+          <BuyPrice>Buy Price</BuyPrice>
           <Reserve> Reserve</Reserve>
           <Issuance>Curve Issuance</Issuance>
           <Supply>Total Supply</Supply>
