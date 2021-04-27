@@ -35,9 +35,9 @@ import {
   Amount,
   PurchaseButtonContainer,
   // PurchaseButton,
-  PurchaseMKTText,
+  // PurchaseMKTText,
   AreaChartContainer,
-  SellMKTText
+  // SellMKTText
 
 } from "../Curve/BondingCurve.elements"
 
@@ -53,7 +53,6 @@ class BondingCurve extends Component {
       switchID: 1
     }
     this.setSwitchID = this.SwitchID.bind(this);
-
   }
 
   SwitchID(id){
@@ -62,8 +61,7 @@ class BondingCurve extends Component {
 
   render(){
 
-    
-
+  
     return (
 <>       
         <CurveOfferingHeader>
