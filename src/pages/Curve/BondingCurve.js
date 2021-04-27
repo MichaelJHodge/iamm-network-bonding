@@ -1,5 +1,7 @@
 import React, {Component }from 'react';
 import "../Curve/curve.css"
+import FadeInAnimation from "../Curve/components/animation.js";
+
 import {
   BondingCurveContainer,
   PurchaseColumn,
@@ -64,11 +66,19 @@ class BondingCurve extends Component {
   
     return (
 <>       
-        <CurveOfferingHeader>
+<FadeInAnimation direction="down">
+<CurveOfferingHeader>
         <HeaderAlert>!</HeaderAlert>
         <HeaderTitle>Initial Bonding Curve Offering</HeaderTitle>
       </CurveOfferingHeader>
-     <BondingCurveContainer>
+
+</FadeInAnimation>
+
+
+       <BondingCurveContainer>
+
+       <FadeInAnimation direction="left">
+
         <ChartContainer>
 
          <ChartDetailsRow>
@@ -84,6 +94,10 @@ class BondingCurve extends Component {
 
  
         </ChartContainer>
+        </FadeInAnimation>
+
+        <FadeInAnimation direction="right">
+
         <PurchaseColumn>
 
             <WalletContainer>
@@ -158,8 +172,11 @@ class BondingCurve extends Component {
               </PurchaseButtonContainer>
             </PurchaseContainer>
         </PurchaseColumn>
+        </FadeInAnimation>
+
 
      </BondingCurveContainer>
+    
     </>
     )
   }
