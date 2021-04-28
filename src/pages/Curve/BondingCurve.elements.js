@@ -2,6 +2,17 @@ import styled from "styled-components";
 import {DownArrowAlt} from '@styled-icons/boxicons-solid/DownArrowAlt';
 
 
+export const MainContainer = styled.div`
+ display: grid;
+ position: relative;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  @media screen and (max-width: 768px) {
+
+
+  }
+`
 
 
 export const CurveOfferingHeader = styled.div`
@@ -16,7 +27,8 @@ export const CurveOfferingHeader = styled.div`
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: rgba(139, 64, 244, 1);
   @media screen and (max-width: 768px) {
-    
+      margin-bottom: 350px;
+
     width: 450px;
 
   }
@@ -65,31 +77,32 @@ export const HeaderTitle = styled.div`
  
 
 export const BondingCurveContainer = styled.div`
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-gap: 2rem;
-height: 750px;
-padding: 25px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      height: 750px;
+      padding: 25px;
 
-@media screen and (max-width: 768px) {
+      @media screen and (max-width: 768px) {
       display:grid; 
-  gap:1rem;
-  grid-template-columns:repeat(auto-fit, minmax(min(100%, 320px), 1fr));
-  align-content: center;
+      gap:1rem;
+      grid-template-columns: repeat(1, 1fr);
+      align-content: center;
       align-items: center;
-  }
+      flex-direction: column;
+      }
 
 `
 
 
 
 export const ChartContainer = styled.div`
-display: grid;
-position: relative;
+      display: grid;
+      position: relative;
       justify-content: flex-start;
       align-items: flex-start;
       height: 73vh;
-  width: 70vw;
+      width: 70vw;
       box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
       padding-top: 10px;
       padding-bottom: 25px;
@@ -99,13 +112,23 @@ position: relative;
       border-width: 1px;
       border-style: solid;
 
+      @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+      display: grid;
+      gap:3rem;
+      align-content: center;
+      align-items: center;
+
+
+      
+  }
+
 
 
 `
 export const AreaChartContainer = styled.div`
       padding-top: 60px;
-      position: relative;
-     
+      
 
 `
 
@@ -279,7 +302,7 @@ export const PurchaseContainer = styled.div`
       border-style: solid;
 
       @media screen and (max-width: 768px) {
-            margin-top: 0px;
+            padding: 25px;
 
   }
 `

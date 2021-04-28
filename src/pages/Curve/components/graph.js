@@ -14,10 +14,10 @@ const AreaChart = () => {
             {
               data: [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4],
               borderColor: "#8B40F4",
-		  fill: true,
-		  radius: 4,
-		  borderWidth: 3,
-		  backgroundColor: "#a05cff",
+              fill: true,
+              radius: 4,
+              borderWidth: 3,
+              backgroundColor: "#a05cff",
             },
           
           ],

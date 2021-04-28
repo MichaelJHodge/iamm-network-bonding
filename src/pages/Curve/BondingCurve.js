@@ -1,8 +1,11 @@
-import React, {Component }from 'react';
+import React, { Component,  } from 'react';
+// import BarChart from './charts/BarChart';
+
+
 import "../Curve/curve.css"
-import FadeInAnimation from "../Curve/components/animation.js";
 
 import {
+  MainContainer,
   BondingCurveContainer,
   PurchaseColumn,
   ChartContainer,
@@ -49,6 +52,8 @@ import AreaChart from '../Curve/components/graph'
 
 class BondingCurve extends Component {
 
+  
+
   constructor(){
     super();
     
@@ -60,18 +65,19 @@ class BondingCurve extends Component {
   }
 
   SwitchID(id){
-
-
     this.setState({switchID: id});
-
   }
 
   render(){
 
-  
+    
+
     return (
 <>       
-<CurveOfferingHeader>
+
+<MainContainer>
+
+        <CurveOfferingHeader>
         <HeaderAlert>!</HeaderAlert>
         <HeaderTitle>Initial Bonding Curve Offering</HeaderTitle>
       </CurveOfferingHeader> 
@@ -175,7 +181,7 @@ class BondingCurve extends Component {
 
 
      </BondingCurveContainer>
-    
+     </MainContainer>
     </>
     )
   }
