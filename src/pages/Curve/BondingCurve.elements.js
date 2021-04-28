@@ -2,18 +2,6 @@ import styled from "styled-components";
 import {DownArrowAlt} from '@styled-icons/boxicons-solid/DownArrowAlt';
 
 
-export const MainContainer = styled.div`
- display: grid;
- position: relative;
-  align-self: center;
-  justify-content: center;
-  align-content: center;
-  @media screen and (max-width: 768px) {
-
-
-  }
-`
-
 
 export const CurveOfferingHeader = styled.div`
   display: flex;
@@ -26,12 +14,7 @@ export const CurveOfferingHeader = styled.div`
   border-radius: 8px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: rgba(139, 64, 244, 1);
-  @media screen and (max-width: 768px) {
-      margin-bottom: 350px;
-
-    width: 450px;
-
-  }
+ 
 `;
 
 export const HeaderAlert = styled.div`
@@ -82,14 +65,10 @@ export const BondingCurveContainer = styled.div`
       grid-gap: 2rem;
       height: 750px;
       padding: 25px;
-
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 600px) {
       display:grid; 
       gap:1rem;
       grid-template-columns: repeat(1, 1fr);
-      align-content: center;
-      align-items: center;
-      flex-direction: column;
       }
 
 `
@@ -102,8 +81,6 @@ export const ChartContainer = styled.div`
       position: relative;
       justify-content: flex-start;
       align-items: flex-start;
-      height: 73vh;
-      width: 70vw;
       box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
       padding-top: 10px;
       padding-bottom: 25px;
@@ -113,12 +90,13 @@ export const ChartContainer = styled.div`
       border-width: 1px;
       border-style: solid;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1200px) {
       grid-template-columns: repeat(1, 1fr);
       display: grid;
-      gap:3rem;
+      gap:1rem;
       align-content: center;
       align-items: center;
+      width: 100%;
       
   }
 
@@ -126,7 +104,7 @@ export const ChartContainer = styled.div`
 export const AreaChartContainer = styled.div`
       padding-top: 25px;
       margin-right: 30px;
-      height: 600px;
+      height: 650px;
       width: 100%;
       max-width: 1100px;
       min-width: 0;
@@ -135,6 +113,12 @@ export const AreaChartContainer = styled.div`
 export const ChartDetailsRow = styled.div`
 display: flex;
 padding-left: 40px;
+@media screen and (max-width: 768px) {
+      padding-left: 0px;
+      text-align: center;
+      
+  }
+
 
 
 `
@@ -163,16 +147,12 @@ export const Supply = styled.div`
 
 `
 export const PurchaseColumn = styled.div` 
-height: 75%;
-width: 100%;
+
 padding-right: 25px;
 padding-left: 25px;
 display: grid;
-grid-template-rows: repeat(1, 2fr);
-@media screen and (max-width: 768px) {
-      width: 85%;
-      display: grid;
-  }
+grid-template-rows: repeat(1, 1fr);
+
 
 `
 
@@ -190,10 +170,7 @@ export const WalletContainer = styled.div`
     border-width: 1px;
     border-style: solid;
 
-    @media screen and (max-width: 768px) {
-      height: 85%;
-
-  }
+   
 
 `
 
