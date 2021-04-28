@@ -127,9 +127,9 @@ export const ChartContainer = styled.div`
 
 `
 export const AreaChartContainer = styled.div`
-      padding-top: 60px;
-      
-
+      padding-top: 30px;
+      height: 600px;
+      width: 1000px;
 `
 
 export const ChartDetailsRow = styled.div`
