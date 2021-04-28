@@ -104,7 +104,7 @@ export const AreaChartContainer = styled.div`
       padding-top: 25px;
       margin-right: 30px;
       height: 650px;
-      width: 100%;
+      width: 1100px;
       max-width: 1100px;
       min-width: 0;
 `
