@@ -47,7 +47,7 @@ import {
 } from "../Curve/BondingCurve.elements"
 
 // import AreaChart from '../Curve/components/graph'
-import Line from '../Curve/components/chart'
+import LineChart from '../Curve/components/chart'
 
 
 
@@ -99,9 +99,7 @@ class BondingCurve extends Component {
 
          <AreaChartContainer>
 
-         <Line/>    
-
-         {/* <AreaChart/>  */}
+         <LineChart/>    
 
          </AreaChartContainer>
 

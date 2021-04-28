@@ -97,7 +97,8 @@ export const BondingCurveContainer = styled.div`
 
 
 export const ChartContainer = styled.div`
-      display: grid;
+      display: flex;
+      flex-direction: column;
       position: relative;
       justify-content: flex-start;
       align-items: flex-start;
@@ -118,18 +119,17 @@ export const ChartContainer = styled.div`
       gap:3rem;
       align-content: center;
       align-items: center;
-
-
       
   }
 
-
-
 `
 export const AreaChartContainer = styled.div`
-      padding-top: 30px;
+      padding-top: 25px;
+      margin-right: 30px;
       height: 600px;
-      width: 1000px;
+      width: 100%;
+      max-width: 1100px;
+      min-width: 0;
 `
 
 export const ChartDetailsRow = styled.div`
