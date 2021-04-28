@@ -63,12 +63,12 @@ export const BondingCurveContainer = styled.div`
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 2rem;
-      height: 750px;
       padding: 25px;
-      @media screen and (max-width: 600px) {
+
+      @media screen and (max-width: 1200px) {
       display:grid; 
       gap:1rem;
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 2fr);
       }
 
 `
@@ -90,13 +90,12 @@ export const ChartContainer = styled.div`
       border-width: 1px;
       border-style: solid;
 
-      @media screen and (max-width: 1200px) {
-      grid-template-columns: repeat(1, 1fr);
-      display: grid;
-      gap:1rem;
-      align-content: center;
-      align-items: center;
-      width: 100%;
+      @media screen and (max-width: 1500px) {
+            grid-template-columns: repeat(1, 1fr);
+            display: grid;
+            gap:1rem;
+            align-content: center;
+            align-items: center;
       
   }
 
@@ -153,6 +152,18 @@ padding-left: 25px;
 display: grid;
 grid-template-rows: repeat(1, 1fr);
 
+@media screen and (max-width: 1200px) {
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 3rem;
+
+}
+
+@media screen and (max-width: 768px) {
+      display: grid;
+grid-template-columns: repeat(1, 1fr);
+width: 100%;
+}
+  
 
 `
 
@@ -169,6 +180,8 @@ export const WalletContainer = styled.div`
     border-color: rgba(128, 128, 128, 1);
     border-width: 1px;
     border-style: solid;
+
+    
 
    
 
@@ -278,10 +291,17 @@ export const PurchaseContainer = styled.div`
       border-width: 1px;
       border-style: solid;
 
+
       @media screen and (max-width: 768px) {
             padding: 25px;
+      }
+     
+      @media screen and (max-width: 1200px) {
+   
+       margin-top: 0px;
 
-  }
+
+}
 `
 
 
