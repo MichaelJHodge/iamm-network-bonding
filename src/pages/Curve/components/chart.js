@@ -9,6 +9,7 @@ const LineChart = () => (
         xScale={{ type: 'point' }}
         yScale={{ type: 'linear', min: 'auto', max: 'auto', reverse: false }}
         yFormat=" >-.2f"
+
         axisTop={null}
         axisRight={null}
         axisBottom={{

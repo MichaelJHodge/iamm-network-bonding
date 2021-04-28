@@ -5,7 +5,6 @@ import React, { Component,  } from 'react';
 import "../Curve/curve.css"
 
 import {
-  MainContainer,
   BondingCurveContainer,
   PurchaseColumn,
   ChartContainer,
@@ -46,7 +45,6 @@ import {
 
 } from "../Curve/BondingCurve.elements"
 
-// import AreaChart from '../Curve/components/graph'
 import LineChart from '../Curve/components/chart'
 
 
@@ -76,7 +74,6 @@ class BondingCurve extends Component {
     return (
 <>       
 
-<MainContainer>
 
         <CurveOfferingHeader>
         <HeaderAlert>!</HeaderAlert>
@@ -184,7 +181,6 @@ class BondingCurve extends Component {
 
 
      </BondingCurveContainer>
-     </MainContainer>
     </>
     )
   }
