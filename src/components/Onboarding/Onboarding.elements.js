@@ -27,6 +27,11 @@ export const TipText = styled.div`
 
 `
 
+
+export const WalletTipText = styled(TipText)`
+    padding-top: 20px;
+`
+
 export const GetStartedButton = styled.button`
 
     justify-content: center;
@@ -43,6 +48,8 @@ export const GetStartedButton = styled.button`
     font-size: 18px;
     line-height: 22px;
     margin-top: 25px;
+    cursor: pointer;
+
 
 `
 
@@ -54,7 +61,7 @@ export const WalletDownloadButton = styled.button`
     padding: 12px;
     background-color: black;
     height: 46px;
-    border: 2px solid #1A1A1A;
+    border: 2px solid white;
     box-sizing: border-box;
     border-radius: 8px;
     font-family: "Poppins";
@@ -63,5 +70,7 @@ export const WalletDownloadButton = styled.button`
     font-size: 18px;
     line-height: 22px;
     margin-top: 25px;
+    color: white;
+    cursor: pointer;
 
 `

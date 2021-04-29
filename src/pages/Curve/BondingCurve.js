@@ -45,7 +45,7 @@ import LineChart from '../Curve/components/chart'
 
 import Tour from "reactour";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
-import {tourConfig} from "../../components/Onboarding/Onboarding.js"
+import {tourConfig, walletTourConfig, connectWalletTourConfig} from "../../components/Onboarding/Onboarding.js"
  
 
 class BondingCurve extends Component {
@@ -56,6 +56,9 @@ class BondingCurve extends Component {
     this.state = {
       switchID: 1,
       isTourOpen: true,
+      isWalletTourOpen: false,
+      isConnectWalletTourOpen: false,
+
     }
 
     this.setSwitchID = this.SwitchID.bind(this);
@@ -68,11 +71,34 @@ class BondingCurve extends Component {
  
   closeTour = () => {
     this.setState({ isTourOpen: false });
-  };
 
+  };
 
   openTour = () => {
     this.setState({ isTourOpen: true });
+
+  };
+
+
+  closeWalletTour = () => {
+    this.setState({ isWalletTourOpen: false });
+
+  };
+
+  openWalletTour = () => {
+    this.setState({ isWalletTourOpen: true });
+
+  };
+
+
+  closeConnectWalletTour = () => {
+    this.setState({ isConnectWalletTourOpen: false });
+
+  };
+
+  openConnectWalletTour = () => {
+    this.setState({ isConnectWalletTourOpen: true });
+
   };
 
   SwitchID(id){
@@ -81,7 +107,8 @@ class BondingCurve extends Component {
 
   render(){
 
-    const { isTourOpen } = this.state;
+    const { isTourOpen, isWalletTourOpen, isConnectWalletTourOpen} = this.state;
+
 
   
     return (
@@ -96,9 +123,36 @@ class BondingCurve extends Component {
           rounded={10}
           accentColor={"#40F48B"}
           onAfterOpen={this.disableBody}
-          onBeforeClose={this.enableBody}
-         
+          onBeforeClose={this.enableBody}      
         />
+
+          <Tour
+          openWalletTour={this.openWalletTour}
+          onRequestClose={this.closeWalletTour}
+          steps={walletTourConfig}
+          isOpen={isWalletTourOpen}
+          maskClassName="walletMask"
+          className="helper"
+          rounded={10}
+          accentColor={"#40F48B"}
+          onAfterOpen={this.disableBody}
+          onBeforeClose={this.enableBody}      
+          />
+
+
+        <Tour
+          connectWalletTour={this.connectWalletTour}
+          onRequestClose={this.closeConnectWalletTour}
+          steps={connectWalletTourConfig}
+          isOpen={isConnectWalletTourOpen}
+          maskClassName="walletMask"
+          className="helper"
+          rounded={10}
+          accentColor={"#40F48B"}
+          onAfterOpen={this.disableBody}
+          onBeforeClose={this.enableBody}      
+          />
+
 
       <div  data-tut="finish" > 
         <CurveOfferingHeader>
@@ -134,9 +188,9 @@ class BondingCurve extends Component {
         <PurchaseColumn>
 
             <WalletContainer data-tut="Wallets" >
-            <ConnectWallet>Connect Wallet</ConnectWallet>
+            <ConnectWallet data-tut="Connect-Wallet" onClick={this.openConnectWalletTour}>Connect Wallet</ConnectWallet>
             <ImportWallet>Import Wallet</ImportWallet>
-            <CreateWallet data-tut="Create-Wallet" >Create Wallet</CreateWallet>
+            <CreateWallet data-tut="Create-Wallet" onClick={this.openWalletTour} >Create Wallet</CreateWallet>
             </WalletContainer>
 
             <PurchaseContainer data-tut="Purchase">

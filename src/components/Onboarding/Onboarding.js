@@ -1,8 +1,8 @@
 
-import {TipContainer, TipHeader, TipText, GetStartedButton, WalletDownloadButton} from "./Onboarding.elements";
+import {TipContainer, TipHeader, TipText, WalletTipText, GetStartedButton, WalletDownloadButton} from "./Onboarding.elements";
 
 
-export const tourConfig1 = [
+export const tourConfig = [
     {
       selector: '[data-tut="Main-Container"]',
       content: () => (
@@ -127,7 +127,7 @@ export const tourConfig1 = [
 
 
 
-  export const tourConfig = [
+export const walletTourConfig = [
     {
       selector: '[data-tut="Create-Wallet"]',
       content: () => (
@@ -144,7 +144,7 @@ export const tourConfig1 = [
             </clipPath>
             </defs>
             </svg>
-          <TipText>Follow this short tutorial to create a new IAMM compatible wallet.</TipText>
+          <WalletTipText>Follow this short tutorial to create a new IAMM compatible wallet.</WalletTipText>
           </TipContainer>
           
         </div>
@@ -168,7 +168,7 @@ export const tourConfig1 = [
 <path d="M63.2776 59.4583C65.5558 59.4583 67.4026 57.6114 67.4026 55.3333C67.4026 53.0551 65.5558 51.2083 63.2776 51.2083C60.9994 51.2083 59.1526 53.0551 59.1526 55.3333C59.1526 57.6114 60.9994 59.4583 63.2776 59.4583Z" fill="white"/>
 </svg>
 
-            <TipText>Wallets hold your keys and can create and broadcast transactions on your behalf.</TipText>
+            <WalletTipText>Wallets hold your keys and can create and broadcast transactions on your behalf.</WalletTipText>
             </TipContainer>
             
           </div>
@@ -191,7 +191,7 @@ export const tourConfig1 = [
             <path d="M51.296 37.9926H38.0293L68.75 69.375V0.875H51.296V37.9926Z" fill="white"/>
             </svg>
 
-            <TipText>Neuron is a CKB wallet produced by the Nervos Foundation</TipText>
+            <WalletTipText>Neuron is a CKB wallet produced by the Nervos Foundation</WalletTipText>
             <WalletDownloadButton>Go to Wallet Download</WalletDownloadButton>
             </TipContainer>
             
@@ -217,7 +217,7 @@ export const tourConfig1 = [
             <path d="M67 15.3333L71.6667 20L80.5 11.1666M86.0555 15.3333C86.0555 22.0835 80.5835 27.5555 73.8333 27.5555C67.0832 27.5555 61.6111 22.0835 61.6111 15.3333C61.6111 8.58316 67.0832 3.11108 73.8333 3.11108C80.5835 3.11108 86.0555 8.58316 86.0555 15.3333Z" stroke="#1A1A1A" stroke-width="2"/>
             </svg>
 
-            <TipText>You can check the block height with CKB-Explorer's to make sure that your wallet is up to date.</TipText>
+            <WalletTipText>You can check the block height with CKB-Explorer's to make sure that your wallet is up to date.</WalletTipText>
             </TipContainer>
             
           </div>
@@ -248,7 +248,7 @@ export const tourConfig1 = [
                 </clipPath>
                 </defs>
                 </svg>
-            <TipText>Follow the steps within the Neuron Wallet to create a new CKB wallet</TipText>
+            <WalletTipText>Follow the steps within the Neuron Wallet to create a new CKB wallet</WalletTipText>
             </TipContainer>
             
           </div>
@@ -271,7 +271,7 @@ export const tourConfig1 = [
                 <path d="M85.3373 42.4848L66.1918 9.713C65.9333 9.2681 65.5626 8.89883 65.1167 8.6421C64.6708 8.38536 64.1653 8.25016 63.6508 8.25H25.3488C24.8348 8.25064 24.3298 8.38607 23.8845 8.64278C23.4391 8.89949 23.0688 9.2685 22.8106 9.713L3.66232 42.4875C3.39389 42.9474 3.25244 43.4703 3.25244 44.0027C3.25244 44.5352 3.39389 45.0581 3.66232 45.518L22.8133 78.2897C23.0716 78.7342 23.4418 79.1033 23.8872 79.36C24.3326 79.6167 24.8375 79.7521 25.3516 79.7527H63.6536C64.1676 79.7521 64.6725 79.6167 65.1179 79.36C65.5633 79.1033 65.9336 78.7342 66.1918 78.2897L85.3373 45.5125C85.6057 45.0526 85.7472 44.5297 85.7472 43.9972C85.7472 43.4648 85.6057 42.9419 85.3373 42.482V42.4848ZM41.4088 22H47.5963V52.25H41.4088V22ZM44.4998 68.75C43.684 68.75 42.8864 68.5081 42.2081 68.0548C41.5297 67.6015 41.001 66.9573 40.6888 66.2036C40.3766 65.4498 40.2949 64.6204 40.4541 63.8203C40.6132 63.0201 41.0061 62.2851 41.583 61.7082C42.1599 61.1313 42.8949 60.7384 43.6951 60.5793C44.4952 60.4201 45.3246 60.5018 46.0784 60.814C46.8321 61.1262 47.4764 61.6549 47.9296 62.3333C48.3829 63.0116 48.6248 63.8092 48.6248 64.625C48.6248 65.719 48.1902 66.7682 47.4166 67.5418C46.643 68.3154 45.5938 68.75 44.4998 68.75Z" fill="#F4E540"/>
                 </svg>
 
-            <TipText>You won't be able to recover your wallet without it. Write down your seed. Don't copy and paste it anywhere.</TipText>
+            <WalletTipText>You won't be able to recover your wallet without it. Write down your seed. Don't copy and paste it anywhere.</WalletTipText>
             </TipContainer>
             
           </div>
@@ -294,7 +294,7 @@ export const tourConfig1 = [
                 <path d="M3.75019 66.8333H53.2502C53.9374 66.832 54.6002 67.0881 55.108 67.551C55.6158 68.014 55.9319 68.6504 55.994 69.3348C56.0561 70.0192 55.8597 70.702 55.4435 71.2488C55.0273 71.7956 54.4214 72.1668 53.7452 72.2893L53.2502 72.3333H3.75019C3.06298 72.3345 2.40021 72.0784 1.89238 71.6155C1.38455 71.1525 1.06846 70.5161 1.00637 69.8317C0.944279 69.1473 1.14068 68.4645 1.55689 67.9177C1.97311 67.3709 2.57898 66.9997 3.25519 66.8773L3.75019 66.8333H53.2502H3.75019ZM28.0052 0.877252L28.5002 0.833252C29.1438 0.833038 29.7672 1.05859 30.2616 1.47064C30.7561 1.88269 31.0903 2.45512 31.2062 3.08825L31.2502 3.58325V51.9393L46.0012 37.1938C46.4562 36.7382 47.0567 36.4568 47.6979 36.3985C48.3391 36.3402 48.9805 36.5087 49.5102 36.8748L49.8952 37.1938C50.3499 37.6495 50.6303 38.2502 50.6876 38.8915C50.7449 39.5327 50.5754 40.1737 50.2087 40.7028L49.8897 41.0823L30.4472 60.5303C29.9915 60.985 29.3907 61.2654 28.7495 61.3227C28.1083 61.38 27.4673 61.2105 26.9382 60.8438L26.5532 60.5303L7.11069 41.0823C6.62347 40.5972 6.33561 39.9473 6.30382 39.2605C6.27203 38.5738 6.49863 37.9 6.93895 37.372C7.37927 36.8441 8.00138 36.5002 8.68268 36.4081C9.36398 36.3161 10.055 36.4826 10.6197 36.8748L10.9992 37.1938L25.7502 51.9393V3.58325C25.75 2.93961 25.9755 2.31629 26.3876 1.82183C26.7996 1.32737 27.3721 0.993107 28.0052 0.877252L28.5002 0.833252L28.0052 0.877252Z" fill="white"/>
                 </svg>
 
-            <TipText>You need CKB or MKT to interact with the bonding curve</TipText>
+            <WalletTipText>You need CKB or MKT to interact with the bonding curve</WalletTipText>
             </TipContainer>
             
           </div>
@@ -309,7 +309,7 @@ export const tourConfig1 = [
 
       {
         selector: '[data-tut="Create-Wallet" ]',
-        content: () => (
+        content: ({goTo}) => (
           <div>
             <TipContainer>
             <TipHeader>Good to go!</TipHeader>
@@ -317,7 +317,121 @@ export const tourConfig1 = [
             <path d="M75 86.3333L109.5 120.833L220 10.3333" stroke="#40F48B" stroke-width="4" stroke-linecap="round"/>
             </svg>
 
-            <GetStartedButton>Connect Wallet</GetStartedButton>
+            <GetStartedButton onClick={() => goTo(8)}>Connect Wallet</GetStartedButton>
+            </TipContainer>
+            
+          </div>
+        ),
+        style :{ 
+          backgroundColor: "black",
+          color: "white",
+        },
+        
+       
+      },
+
+      {
+        selector: '[data-tut="Create-Wallet"]',
+        content: () => (
+          <div>
+            <TipContainer>
+            <TipHeader>Awaiting wallet response</TipHeader>
+                            <svg width="83" height="83" viewBox="0 0 83 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path d="M44.1394 5.88912C43.2611 5.82428 42.3807 5.7918 41.5 5.79175V0.666748C42.5073 0.667239 43.5141 0.704848 44.5186 0.779498L44.1394 5.88912ZM54.4099 8.19537C52.767 7.56143 51.0798 7.04926 49.3618 6.663L50.4841 1.661C52.447 2.10175 54.3791 2.686 56.2549 3.41375L54.4099 8.19537ZM61.4311 11.8341C60.6984 11.3455 59.9479 10.8839 59.1813 10.4504L61.7079 5.99162C63.4601 6.98452 65.1371 8.10478 66.7253 9.34337L63.5734 13.387C62.8786 12.8449 62.164 12.3287 61.4311 11.8392V11.8341ZM70.8304 21.0079C69.8166 19.5676 68.6981 18.2041 67.4838 16.9284L71.1943 13.3921C72.578 14.8527 73.8593 16.4159 75.0226 18.0559L70.8304 21.0079ZM74.6434 27.9369C74.307 27.1243 73.9412 26.3243 73.5466 25.5384L78.1233 23.2321C79.0283 25.0314 79.7992 26.8952 80.4295 28.8081L75.5608 30.4123C75.2853 29.5762 74.9793 28.7505 74.6434 27.9369ZM77.3596 40.7853C77.3182 39.024 77.1469 37.2682 76.8471 35.5321L81.8953 34.6609C82.2386 36.6391 82.4385 38.6481 82.4898 40.6571L77.3648 40.7853H77.3596ZM76.6883 48.6675C76.8574 47.7963 76.9958 46.9301 77.1034 46.0538L82.1925 46.6841C81.9463 48.6837 81.5523 50.6622 81.0138 52.6035L76.0733 51.2351C76.309 50.3895 76.514 49.5336 76.6883 48.6675ZM71.8092 60.8599C72.7523 59.3736 73.5825 57.8156 74.3 56.2064L78.9843 58.282C78.1643 60.127 77.2161 61.9003 76.1399 63.6018L71.8092 60.8599ZM66.8688 67.0355C67.494 66.4103 68.0936 65.7645 68.6625 65.0983L72.5473 68.4449C71.8894 69.2076 71.2039 69.9461 70.4921 70.6589L66.8688 67.0355Z" fill="white"/>
+                <path d="M41.5 5.79175C35.6005 5.79217 29.7922 7.24749 24.5894 10.0288C19.3867 12.8101 14.9502 16.8315 11.6728 21.7369C8.39541 26.6423 6.37834 32.2802 5.80024 38.1513C5.22214 44.0224 6.10085 49.9455 8.35855 55.3959C10.6162 60.8463 14.1832 65.6558 18.7436 69.3984C23.3039 73.141 28.7169 75.7012 34.503 76.8523C40.2891 78.0033 46.2698 77.7097 51.9153 75.9974C57.5608 74.285 62.697 71.2069 66.8687 67.0355L70.4921 70.6589C65.7245 75.4291 59.8539 78.9497 53.4005 80.9089C46.947 82.868 40.1099 83.205 33.4951 81.8902C26.8802 80.5754 20.6918 77.6493 15.4781 73.3712C10.2643 69.093 6.18636 63.5949 3.60541 57.3641C1.02445 51.1332 0.0202214 44.3619 0.681694 37.6501C1.34317 30.9384 3.64992 24.4934 7.39756 18.8862C11.1452 13.279 16.218 8.68282 22.1666 5.50476C28.1151 2.32671 34.7557 0.664961 41.5 0.666749V5.79175Z" fill="white"/>
+                <path d="M38.9375 16.0417C39.6171 16.0417 40.2689 16.3117 40.7495 16.7923C41.23 17.2728 41.5 17.9246 41.5 18.6042V45.3055L58.146 54.8175C58.7189 55.1631 59.134 55.7191 59.3024 56.3667C59.4708 57.0143 59.3792 57.7021 59.0472 58.283C58.7153 58.864 58.1692 59.292 57.5258 59.4757C56.8824 59.6594 56.1926 59.5841 55.604 59.266L37.6665 49.016C37.2743 48.792 36.9483 48.4683 36.7215 48.0776C36.4947 47.687 36.3751 47.2434 36.375 46.7917V18.6042C36.375 17.9246 36.645 17.2728 37.1255 16.7923C37.6061 16.3117 38.2579 16.0417 38.9375 16.0417Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="82" height="82" fill="white" transform="translate(0.5 0.666748)"/>
+                </clipPath>
+                </defs>
+                </svg>
+
+            <WalletTipText >You should see a prompt asking you to accept the incoming connection request.</WalletTipText>
+            </TipContainer>
+            
+          </div>
+        ),
+        style :{ 
+          backgroundColor: "black",
+          color: "white",
+        },
+        
+       
+      },
+
+      {
+        selector: '[data-tut="Create-Wallet"]',
+        content: () => (
+          <div>
+            <TipContainer>
+            <TipHeader>Failed to connect</TipHeader>
+            <WalletTipText>Please check your wallet settings and try again</WalletTipText>
+            <GetStartedButton>Retry Connection</GetStartedButton>
+            <WalletTipText>If you don't have a wallet, learn how to create one here</WalletTipText>
+
+            </TipContainer>
+            
+          </div>
+        ),
+        style :{ 
+          backgroundColor: "black",
+          color: "white",
+        },
+        
+       
+      },
+   
+  ]
+
+
+
+  export const connectWalletTourConfig = [
+    {
+        selector: '[data-tut="Connect-Wallet" ]',
+        content: ({goTo}) => (
+          <div>
+            <TipContainer>
+            <TipHeader>Connect your wallet</TipHeader>
+            <svg width="295" height="146" viewBox="0 0 295 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M75 86.3333L109.5 120.833L220 10.3333" stroke="#40F48B" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+
+            <GetStartedButton onClick={() => goTo(8)}>Connect Wallet</GetStartedButton>
+            </TipContainer>
+            
+          </div>
+        ),
+        style :{ 
+          backgroundColor: "black",
+          color: "white",
+        },
+        
+       
+      },
+
+      {
+        selector: '[data-tut="Connect-Wallet"]',
+        content: () => (
+          <div>
+            <TipContainer>
+            <TipHeader>Awaiting wallet response</TipHeader>
+                            <svg width="83" height="83" viewBox="0 0 83 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path d="M44.1394 5.88912C43.2611 5.82428 42.3807 5.7918 41.5 5.79175V0.666748C42.5073 0.667239 43.5141 0.704848 44.5186 0.779498L44.1394 5.88912ZM54.4099 8.19537C52.767 7.56143 51.0798 7.04926 49.3618 6.663L50.4841 1.661C52.447 2.10175 54.3791 2.686 56.2549 3.41375L54.4099 8.19537ZM61.4311 11.8341C60.6984 11.3455 59.9479 10.8839 59.1813 10.4504L61.7079 5.99162C63.4601 6.98452 65.1371 8.10478 66.7253 9.34337L63.5734 13.387C62.8786 12.8449 62.164 12.3287 61.4311 11.8392V11.8341ZM70.8304 21.0079C69.8166 19.5676 68.6981 18.2041 67.4838 16.9284L71.1943 13.3921C72.578 14.8527 73.8593 16.4159 75.0226 18.0559L70.8304 21.0079ZM74.6434 27.9369C74.307 27.1243 73.9412 26.3243 73.5466 25.5384L78.1233 23.2321C79.0283 25.0314 79.7992 26.8952 80.4295 28.8081L75.5608 30.4123C75.2853 29.5762 74.9793 28.7505 74.6434 27.9369ZM77.3596 40.7853C77.3182 39.024 77.1469 37.2682 76.8471 35.5321L81.8953 34.6609C82.2386 36.6391 82.4385 38.6481 82.4898 40.6571L77.3648 40.7853H77.3596ZM76.6883 48.6675C76.8574 47.7963 76.9958 46.9301 77.1034 46.0538L82.1925 46.6841C81.9463 48.6837 81.5523 50.6622 81.0138 52.6035L76.0733 51.2351C76.309 50.3895 76.514 49.5336 76.6883 48.6675ZM71.8092 60.8599C72.7523 59.3736 73.5825 57.8156 74.3 56.2064L78.9843 58.282C78.1643 60.127 77.2161 61.9003 76.1399 63.6018L71.8092 60.8599ZM66.8688 67.0355C67.494 66.4103 68.0936 65.7645 68.6625 65.0983L72.5473 68.4449C71.8894 69.2076 71.2039 69.9461 70.4921 70.6589L66.8688 67.0355Z" fill="white"/>
+                <path d="M41.5 5.79175C35.6005 5.79217 29.7922 7.24749 24.5894 10.0288C19.3867 12.8101 14.9502 16.8315 11.6728 21.7369C8.39541 26.6423 6.37834 32.2802 5.80024 38.1513C5.22214 44.0224 6.10085 49.9455 8.35855 55.3959C10.6162 60.8463 14.1832 65.6558 18.7436 69.3984C23.3039 73.141 28.7169 75.7012 34.503 76.8523C40.2891 78.0033 46.2698 77.7097 51.9153 75.9974C57.5608 74.285 62.697 71.2069 66.8687 67.0355L70.4921 70.6589C65.7245 75.4291 59.8539 78.9497 53.4005 80.9089C46.947 82.868 40.1099 83.205 33.4951 81.8902C26.8802 80.5754 20.6918 77.6493 15.4781 73.3712C10.2643 69.093 6.18636 63.5949 3.60541 57.3641C1.02445 51.1332 0.0202214 44.3619 0.681694 37.6501C1.34317 30.9384 3.64992 24.4934 7.39756 18.8862C11.1452 13.279 16.218 8.68282 22.1666 5.50476C28.1151 2.32671 34.7557 0.664961 41.5 0.666749V5.79175Z" fill="white"/>
+                <path d="M38.9375 16.0417C39.6171 16.0417 40.2689 16.3117 40.7495 16.7923C41.23 17.2728 41.5 17.9246 41.5 18.6042V45.3055L58.146 54.8175C58.7189 55.1631 59.134 55.7191 59.3024 56.3667C59.4708 57.0143 59.3792 57.7021 59.0472 58.283C58.7153 58.864 58.1692 59.292 57.5258 59.4757C56.8824 59.6594 56.1926 59.5841 55.604 59.266L37.6665 49.016C37.2743 48.792 36.9483 48.4683 36.7215 48.0776C36.4947 47.687 36.3751 47.2434 36.375 46.7917V18.6042C36.375 17.9246 36.645 17.2728 37.1255 16.7923C37.6061 16.3117 38.2579 16.0417 38.9375 16.0417Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="82" height="82" fill="white" transform="translate(0.5 0.666748)"/>
+                </clipPath>
+                </defs>
+                </svg>
+
+            <WalletTipText >You should see a prompt asking you to accept the incoming connection request.</WalletTipText>
             </TipContainer>
             
           </div>
