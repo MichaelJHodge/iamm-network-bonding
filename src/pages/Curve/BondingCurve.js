@@ -1,9 +1,5 @@
 import React, { Component,  } from 'react';
-// import BarChart from './charts/BarChart';
-
-
 import "../Curve/curve.css"
-
 import {
   BondingCurveContainer,
   PurchaseColumn,
@@ -47,21 +43,35 @@ import {
 
 import LineChart from '../Curve/components/chart'
 
-
+import Tour from "reactour";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+import {tourConfig} from "../../components/Onboarding/Onboarding.js"
+ 
 
 class BondingCurve extends Component {
-
-  
 
   constructor(){
     super();
     
     this.state = {
-      switchID: 1
+      switchID: 1,
+      isTourOpen: true,
     }
 
     this.setSwitchID = this.SwitchID.bind(this);
   }
+
+ 
+  disableBody = target => disableBodyScroll(target);
+  enableBody = target => enableBodyScroll(target);
+
+  closeTour = () => {
+    this.setState({ isTourOpen: false });
+  };
+
+  openTour = () => {
+    this.setState({ isTourOpen: true });
+  };
 
   SwitchID(id){
     this.setState({switchID: id});
@@ -69,23 +79,37 @@ class BondingCurve extends Component {
 
   render(){
 
-    
+    const { isTourOpen } = this.state;
 
+  
     return (
 <>       
 
+          <Tour
+          onRequestClose={this.closeTour}
+          steps={tourConfig}
+          isOpen={isTourOpen}
+          maskClassName="mask"
+          className="helper"
+          rounded={5}
+          accentColor={"#40F48B"}
+          onAfterOpen={this.disableBody}
+          onBeforeClose={this.enableBody}
+         
+        />
 
         <CurveOfferingHeader>
         <HeaderAlert>!</HeaderAlert>
         <HeaderTitle>Initial Bonding Curve Offering</HeaderTitle>
-      </CurveOfferingHeader> 
+
+        </CurveOfferingHeader> 
 
 
 
-       <BondingCurveContainer>
+       <BondingCurveContainer data-tut="Main-Container">
 
 
-        <ChartContainer>
+        <ChartContainer data-tut="Line-Chart">
 
          <ChartDetailsRow>
           <BuyPrice>Buy Price</BuyPrice>
@@ -94,7 +118,7 @@ class BondingCurve extends Component {
           <Supply>Total Supply</Supply>
          </ChartDetailsRow>
 
-         <AreaChartContainer>
+         <AreaChartContainer >
 
          <LineChart/>    
 
@@ -106,7 +130,7 @@ class BondingCurve extends Component {
 
         <PurchaseColumn>
 
-            <WalletContainer>
+            <WalletContainer data-tut="Wallets">
             <ConnectWallet>Connect Wallet</ConnectWallet>
             <ImportWallet>Import Wallet</ImportWallet>
             <CreateWallet>Create Wallet</CreateWallet>
@@ -185,5 +209,7 @@ class BondingCurve extends Component {
     )
   }
 }
+
+
 
 export default BondingCurve
