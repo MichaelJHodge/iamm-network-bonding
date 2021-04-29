@@ -364,13 +364,13 @@ export const walletTourConfig = [
 
       {
         selector: '[data-tut="Create-Wallet"]',
-        content: () => (
+        content: ({goTo}) => (
           <div>
             <TipContainer>
             <TipHeader>Failed to connect</TipHeader>
             <WalletTipText>Please check your wallet settings and try again</WalletTipText>
             <GetStartedButton>Retry Connection</GetStartedButton>
-            <WalletTipText>If you don't have a wallet, learn how to create one here</WalletTipText>
+            <WalletTipText>If you don't have a wallet, learn how to create one <u onClick={() => goTo(0)} >here</u></WalletTipText>
 
             </TipContainer>
             
