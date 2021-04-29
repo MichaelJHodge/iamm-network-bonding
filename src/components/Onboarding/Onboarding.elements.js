@@ -44,5 +44,24 @@ export const GetStartedButton = styled.button`
     line-height: 22px;
     margin-top: 25px;
 
+`
+
+
+export const WalletDownloadButton = styled.button`
+
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background-color: black;
+    height: 46px;
+    border: 2px solid #1A1A1A;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 25px;
 
 `

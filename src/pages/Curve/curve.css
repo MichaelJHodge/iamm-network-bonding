@@ -213,6 +213,9 @@ div[type="buyPercent25"].inactive{
 
 }
 
+.mask{
+  color: rgba(52, 52, 52, 0.5) ;
+}
 
 
 

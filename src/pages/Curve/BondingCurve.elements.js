@@ -249,7 +249,6 @@ export const CreateWallet = styled.div`
   max-width: 200px;
       color: rgba(139, 64, 244, 1);
       font-size: 18px;
-      letter-spacing: 0%;
       text-align: center;
       font-family: "Poppins";
       display: flex;

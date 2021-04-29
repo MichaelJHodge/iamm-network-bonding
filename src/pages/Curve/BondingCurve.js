@@ -65,9 +65,11 @@ class BondingCurve extends Component {
   disableBody = target => disableBodyScroll(target);
   enableBody = target => enableBodyScroll(target);
 
+ 
   closeTour = () => {
     this.setState({ isTourOpen: false });
   };
+
 
   openTour = () => {
     this.setState({ isTourOpen: true });
@@ -84,20 +86,21 @@ class BondingCurve extends Component {
   
     return (
 <>       
-      <div  data-tut="finish" > 
+      
           <Tour
           onRequestClose={this.closeTour}
           steps={tourConfig}
           isOpen={isTourOpen}
           maskClassName="mask"
           className="helper"
-          rounded={5}
+          rounded={10}
           accentColor={"#40F48B"}
           onAfterOpen={this.disableBody}
           onBeforeClose={this.enableBody}
          
         />
 
+      <div  data-tut="finish" > 
         <CurveOfferingHeader>
         <HeaderAlert>!</HeaderAlert>
         <HeaderTitle>Initial Bonding Curve Offering</HeaderTitle>
@@ -130,10 +133,10 @@ class BondingCurve extends Component {
 
         <PurchaseColumn>
 
-            <WalletContainer data-tut="Wallets">
+            <WalletContainer data-tut="Wallets" >
             <ConnectWallet>Connect Wallet</ConnectWallet>
             <ImportWallet>Import Wallet</ImportWallet>
-            <CreateWallet>Create Wallet</CreateWallet>
+            <CreateWallet data-tut="Create-Wallet" >Create Wallet</CreateWallet>
             </WalletContainer>
 
             <PurchaseContainer data-tut="Purchase">
