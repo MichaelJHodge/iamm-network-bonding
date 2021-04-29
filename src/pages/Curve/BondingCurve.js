@@ -84,7 +84,7 @@ class BondingCurve extends Component {
   
     return (
 <>       
-
+      <div  data-tut="finish" > 
           <Tour
           onRequestClose={this.closeTour}
           steps={tourConfig}
@@ -106,7 +106,7 @@ class BondingCurve extends Component {
 
 
 
-       <BondingCurveContainer data-tut="Main-Container">
+       <BondingCurveContainer data-tut="Main-Container" >
 
 
         <ChartContainer data-tut="Line-Chart">
@@ -136,7 +136,7 @@ class BondingCurve extends Component {
             <CreateWallet>Create Wallet</CreateWallet>
             </WalletContainer>
 
-            <PurchaseContainer>
+            <PurchaseContainer data-tut="Purchase">
               <Conversion>1 MKT = 678 CKB</Conversion>
 
               <Switch>    
@@ -205,7 +205,9 @@ class BondingCurve extends Component {
 
 
      </BondingCurveContainer>
+     </div> 
     </>
+    
     )
   }
 }
